@@ -1,0 +1,250 @@
+/* TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,500&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+/* PORTADA */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 570px;
+}
+
+.hero-texto {
+    padding: 110px 10%;
+    background-color: var(--crema);
+}
+
+.etiqueta {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-family: 'Bodoni Moda', serif;
+    line-height: 1.12;
+}
+
+h1 {
+    font-size: clamp(50px, 6vw, 90px);
+    color: var(--naranja);
+    margin-bottom: 25px;
+}
+
+em {
+    color: var(--fucsia);
+}
+
+.hero-texto > p:not(.etiqueta) {
+    max-width: 420px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    background-color: var(--rosa);
+    color: var(--oscuro);
+    padding: 15px 30px;
+    border: 2px solid var(--naranja);
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.boton:hover {
+    background-color: var(--amarillo);
+}
+
+/* ARTE DE PORTADA */
+.hero-arte {
+    background-color: var(--rosa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--naranja);
+    padding: 45px;
+}
+
+.hero-arte h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(38px, 5vw, 75px);
+    font-weight: 800;
+}
+
+.hero-arte span {
+    font-size: 80px;
+}
+
+/* CINTA DECORATIVA */
+.cinta {
+    background-color: var(--fucsia);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* SOBRE MÍ */
+.sobre-mi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 110px 8%;
+}
+
+.forma {
+    min-height: 350px;
+    background-color: var(--rosa);
+    border-radius: 45% 55% 35% 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--naranja);
+}
+
+.forma h2 {
+    font-size: 65px;
+}
+
+.texto h2,
+.servicios h2,
+.proyectos h2,
+.contacto h2 {
+    font-size: clamp(42px, 5vw, 70px);
+    margin-bottom: 25px;
+}
+
+.texto p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* SERVICIOS */
+.servicios {
+    background-color: var(--naranja);
+    color: white;
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.tarjeta {
+    padding: 35px 20px;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.flor {
+    font-size: 85px;
+    color: var(--rosa);
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    line-height: 1.7;
+}
+
+/* PROYECTOS */
+.proyectos {
+    padding: 110px 8%;
+}
+
+.proyecto {
+    background-color: var(--rosa);
+    padding: 55px;
+    border-radius: 35px;
+    margin-top: 40px;
+}
+
+.proyecto h3 {
+    font-size: 35px;
+    margin: 20px 0;
+    color: var(--naranja);
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: var(--rosa);
+    text-align: center;
+    padding: 110px 8%;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+}
+
+.contacto .boton {
+    margin-top: 20px;
+    background-color: var(--naranja);
+    color: white;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: var(--naranja);
+    color: white;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero,
+    .sobre-mi {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-texto {
+        padding: 80px 8%;
+    }
+
+    .hero-arte {
+        min-height: 320px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+body { 
+    background-color: #fff4e4;
+    font-family:'DM Sans', sans-serif;
+}
+.hero-texto h1 { 
+    font-family: 'Bodoni Moda', serif;
+}
